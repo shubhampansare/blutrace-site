@@ -250,10 +250,16 @@ header.nav.scrolled{
     linear-gradient(90deg, rgba(14,78,163,.05) 1px, transparent 1px);
   background-size:22px 22px;
 }
-.blueprint .board-photo{
-  width:100%; height:auto; display:block; position:relative; z-index:1;
-  border-radius:9px; aspect-ratio:3 / 2; object-fit:cover; object-position:center;
+.board-collage{
+  display:grid;
+  grid-template-columns:1.5fr 1fr;
+  grid-template-rows:1fr 1fr;
+  gap:8px;
+  aspect-ratio:3 / 2;
+  position:relative; z-index:1;
 }
+.board-collage img{ width:100%; height:100%; object-fit:cover; border-radius:7px; display:block; }
+.board-collage img.lead{ grid-row:1 / 3; }
 /* ============================================================
    CAPABILITY STRIP
    ============================================================ */
@@ -511,8 +517,12 @@ section[id]{ scroll-margin-top:80px; }
     <!-- Hero blueprint board -->
     <div class="hero-visual">
       <div class="blueprint">
-        <!-- Hero photo: real PCB macro. Source: Pexels — free/commercial license, no attribution required (photo id 34924856, https://www.pexels.com/photo/34924856/) -->
-        <img class="board-photo" src="hero-board.jpg" width="1400" height="788" loading="eager" decoding="async" alt="Close-up macro of a populated printed circuit board with a central integrated circuit and copper pads" />
+        <!-- Hero collage: real PCB macros. Source: Pexels — free/commercial license, no attribution required (photo ids 34924856, 6755067, 36169774) -->
+        <div class="board-collage">
+          <img class="lead" src="hero-board.jpg" loading="eager" decoding="async" alt="Close-up macro of a populated printed circuit board with a central integrated circuit and copper pads" />
+          <img src="hero-board-2.jpg" loading="lazy" decoding="async" alt="Top-down view of copper traces and routing on a bare printed circuit board" />
+          <img src="hero-board-3.jpg" loading="lazy" decoding="async" alt="Macro of a dense circuit board with surface-mount components" />
+        </div>
       </div>
     </div>
   </div>
