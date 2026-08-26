@@ -150,6 +150,10 @@ header.nav{ position:sticky; top:0; z-index:50; background:#fff; border-bottom:1
 .why-item h4{ font-size:1.02rem; font-weight:700; margin-bottom:5px; }
 .why-item p{ color:var(--muted); font-size:.9rem; line-height:1.5; }
 
+/* About */
+.about-copy p{ color:var(--ink-soft); font-size:1.02rem; margin-bottom:16px; max-width:640px; }
+.about-copy p b{ color:var(--ink); font-weight:600; }
+
 /* CTA */
 .cta{ background:var(--navy); }
 .cta h2{ font-size:clamp(1.7rem,3.4vw,2.5rem); font-weight:700; color:#fff; margin-bottom:14px; max-width:660px; }
@@ -168,7 +172,12 @@ footer{ background:#0c1726; color:#aebccd; padding:52px 0 36px; }
 .foot-col h5{ font-family:var(--font-mono); font-size:.66rem; letter-spacing:.12em; text-transform:uppercase; color:#6f8095; margin-bottom:14px; }
 .foot-col a{ display:block; font-size:.9rem; color:#aebccd; margin-bottom:9px; }
 .foot-col a:hover{ color:#fff; }
-.foot-bottom{ display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; padding-top:22px; font-family:var(--font-mono); font-size:.74rem; color:#6f8095; }
+.foot-legal{ padding-top:24px; font-size:.78rem; line-height:1.75; color:#8fa0b5; }
+.foot-legal p{ margin-bottom:3px; }
+.foot-legal b{ color:#c6d2e2; font-weight:600; }
+.foot-legal a{ color:#aebccd; }
+.foot-legal a:hover{ color:#fff; }
+.foot-bottom{ display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; padding-top:18px; font-family:var(--font-mono); font-size:.74rem; color:#6f8095; }
 
 @media (max-width:980px){
   .hero-grid{ grid-template-columns:1fr; gap:40px; }
@@ -219,6 +228,7 @@ footer{ background:#0c1726; color:#aebccd; padding:52px 0 36px; }
       <a class="lnk" href="#industries">Industries</a>
       <a class="lnk" href="#process">Process</a>
       <a class="lnk" href="#why">Why us</a>
+      <a class="lnk" href="#about">About</a>
       <a class="btn btn-primary" href="mailto:hello@blutrace.io?subject=Project%20inquiry%20%E2%80%94%20Blutrace">Start a project</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
@@ -368,6 +378,21 @@ footer{ background:#0c1726; color:#aebccd; padding:52px 0 36px; }
   </div>
 </section>
 
+<!-- About -->
+<section id="about" class="band">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">About us</span>
+      <h2>An electronics engineering company built for production</h2>
+    </div>
+    <div class="about-copy">
+      <p>Blutrace was founded on a simple premise: hardware projects go better when clients work directly with the <b>engineers doing the work</b>.</p>
+      <p>We take electronic products from concept to production - schematic capture, Altium PCB layout, prototype bring-up, validation, and manufacturing support - as one small, senior team. No handoffs between vendors, no account managers between you and your board.</p>
+      <p>Blutrace operates as a brand of <b>Bluventra Technologies Private Limited</b>, a company incorporated in India under the Companies Act, 2013.</p>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <!-- CTA -->
@@ -392,10 +417,15 @@ footer{ background:#0c1726; color:#aebccd; padding:52px 0 36px; }
         <p class="foot-about">An electronics engineering firm. PCB design, electronics development, prototype testing, and manufacturing support — from concept to production-ready hardware.</p>
       </div>
       <div class="foot-col"><h5>Services</h5><a href="#services">PCB Design</a><a href="#services">Electronics Development</a><a href="#services">Prototype Testing</a><a href="#services">Manufacturing Support</a></div>
-      <div class="foot-col"><h5>Company</h5><a href="#industries">Industries</a><a href="#process">Process</a><a href="#engage">How we engage</a><a href="#why">Why Blutrace</a></div>
+      <div class="foot-col"><h5>Company</h5><a href="#about">About us</a><a href="#industries">Industries</a><a href="#process">Process</a><a href="#engage">How we engage</a><a href="#why">Why Blutrace</a></div>
       <div class="foot-col"><h5>Contact</h5><a href="mailto:hello@blutrace.io">hello@blutrace.io</a><a href="mailto:hello@blutrace.io?subject=Project%20inquiry%20%E2%80%94%20Blutrace">Start a project</a></div>
     </div>
-    <div class="foot-bottom"><div>© <span id="year">2026</span> Blutrace · blutrace.io</div><div>Concept → Production</div></div>
+    <div class="foot-legal">
+      <p><b>Blutrace</b> is a brand of <b>Bluventra Technologies Private Limited</b> · CIN: U70200MH2026PTC473592 · GSTIN: 27AAOCB9430A1ZR</p>
+      <p>Registered office: Room No. 7, Floor 4, Mayur Building, Badamwadi CHS, Plot No. 377, Vithalbhai Patel Road, Girgaon, Mumbai - 400004, Maharashtra, India</p>
+      <p>Phone: <a href="tel:+918586945443">+91-8586945443</a> · Email: <a href="mailto:hello@blutrace.io">hello@blutrace.io</a> · Queries &amp; grievances: Shubham Pansare</p>
+    </div>
+    <div class="foot-bottom"><div>© <span id="year">2026</span> Bluventra Technologies Private Limited. All rights reserved.</div><div>Concept → Production</div></div>
   </div>
 </footer>
 
