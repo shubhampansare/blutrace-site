@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Blutrace — PCB Design, Electronics Development &amp; Testing</title>
-<meta name="description" content="Blutrace is an electronics engineering firm. Schematic design, Altium PCB layout, prototype bring-up, testing, and manufacturing support — from concept to production-ready hardware." />
+<title>BluTrace — PCB Design, Electronics Development, Testing &amp; Consultancy</title>
+<meta name="description" content="BluTrace is an electronics engineering firm. Schematic design, Altium PCB layout, prototype bring-up, testing, engineering consultancy, and manufacturing support — from concept to production-ready hardware." />
 <meta name="theme-color" content="#ffffff" />
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F1B2D'/%3E%3Cg fill='none' stroke='%233D7DD8' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M16 6v6M16 20v6M6 16h6M20 16h6'/%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='4.5' fill='none' stroke='%233D7DD8' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='1.9' fill='%23C0843C'/%3E%3C/svg%3E" />
@@ -15,7 +15,7 @@
 
 <style>
 /* ============================================================
-   Blutrace — Direction A: Corporate Standard
+   BluTrace — Direction A: Corporate Standard
    Conventional, authoritative B2B services look.
    White base · blueprint blue · copper accent (sparing)
    ============================================================ */
@@ -109,6 +109,7 @@ header.nav{ position:sticky; top:0; z-index:50; background:#fff; border-bottom:1
 
 /* Services */
 .cards{ display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:6px; overflow:hidden; }
+.cards .card:last-child:nth-child(odd){ grid-column:1/-1; }
 .card{ background:#fff; padding:34px 32px; }
 .card .top{ display:flex; align-items:center; justify-content:space-between; margin-bottom:18px; }
 .card .ic{ width:44px; height:44px; border-radius:6px; display:grid; place-items:center; background:var(--blue-wash); }
@@ -219,9 +220,9 @@ footer{ background:#0c1726; color:#aebccd; padding:52px 0 36px; }
 <!-- Nav -->
 <header class="nav">
   <div class="nav-inner">
-    <a href="#top" class="brand" aria-label="Blutrace home">
+    <a href="#top" class="brand" aria-label="BluTrace home">
       <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0F1B2D"/><g fill="none" stroke="#3D7DD8" stroke-width="2" stroke-linecap="round"><path d="M16 6v6M16 20v6M6 16h6M20 16h6"/></g><circle cx="16" cy="16" r="4.5" fill="none" stroke="#3D7DD8" stroke-width="2"/><circle cx="16" cy="16" r="1.9" fill="#C0843C"/></svg>
-      <span><b>blu</b>trace</span>
+      <span><b>Blu</b>Trace</span>
     </a>
     <nav class="nav-links" id="navLinks" aria-label="Primary">
       <a class="lnk" href="#services">Services</a>
@@ -229,7 +230,7 @@ footer{ background:#0c1726; color:#aebccd; padding:52px 0 36px; }
       <a class="lnk" href="#process">Process</a>
       <a class="lnk" href="#why">Why us</a>
       <a class="lnk" href="#about">About</a>
-      <a class="btn btn-primary" href="mailto:hello@blutrace.io?subject=Project%20inquiry%20%E2%80%94%20Blutrace">Start a project</a>
+      <a class="btn btn-primary" href="mailto:hello@blutrace.io?subject=Project%20inquiry%20%E2%80%94%20BluTrace">Start a project</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
@@ -243,9 +244,9 @@ footer{ background:#0c1726; color:#aebccd; padding:52px 0 36px; }
     <div class="hero-copy">
       <span class="eyebrow">PCB Design · Electronics · Test</span>
       <h1>From schematic to <span class="accent">production-ready</span> hardware.</h1>
-      <p class="sub">Blutrace is an electronics engineering firm. We take products from <b>concept to production</b> — schematic capture, Altium multilayer PCB layout, prototype bring-up, validation, and manufacturing support. You work directly with the engineers doing the work.</p>
+      <p class="sub">BluTrace is an electronics engineering firm. We take products from <b>concept to production</b> — schematic capture, Altium multilayer PCB layout, prototype bring-up, validation, consultancy, and manufacturing support. One accountable team from first schematic to production handoff.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="mailto:hello@blutrace.io?subject=Project%20inquiry%20%E2%80%94%20Blutrace">Start a project</a>
+        <a class="btn btn-primary" href="mailto:hello@blutrace.io?subject=Project%20inquiry%20%E2%80%94%20BluTrace">Start a project</a>
         <a class="btn btn-ghost" href="#services">See our capabilities</a>
       </div>
       <div class="hero-meta">
@@ -271,6 +272,7 @@ footer{ background:#0c1726; color:#aebccd; padding:52px 0 36px; }
       <span class="it">Bring-up &amp; Test</span>
       <span class="it">DFM Review</span>
       <span class="it">Manufacturing Files</span>
+      <span class="it">Engineering Consultancy</span>
     </div>
   </div>
 </div>
@@ -303,6 +305,11 @@ footer{ background:#0c1726; color:#aebccd; padding:52px 0 36px; }
         <div class="top"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21V9l6 4V9l6 4V5l6 4v12z"/><path d="M3 21h18"/></svg></div><span class="num">04</span></div>
         <h3>Manufacturing Support</h3>
         <ul><li>BOM optimization</li><li>Footprint and library creation</li><li>DFM review</li><li>PCB assembly support</li><li>Supplier coordination</li></ul>
+      </article>
+      <article class="card">
+        <div class="top"><div class="ic"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.9.8 1 1.6 1 2.5h6c0-.9.1-1.7 1-2.5A6 6 0 0 0 12 3z"/></svg></div><span class="num">05</span></div>
+        <h3>Engineering Consultancy</h3>
+        <ul><li>Technology and feasibility assessment</li><li>Architecture and component selection</li><li>Schematic and layout design reviews</li><li>DFM and cost-down consulting</li><li>Debug and root-cause investigation</li></ul>
       </article>
     </div>
   </div>
@@ -365,13 +372,13 @@ footer{ background:#0c1726; color:#aebccd; padding:52px 0 36px; }
 <section id="why">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Why Blutrace</span>
+      <span class="eyebrow">Why BluTrace</span>
       <h2>Built like engineers, run like partners</h2>
       <p>We optimize for designs that ship — not designs that only look good on screen.</p>
     </div>
     <div class="why-grid">
       <div class="why-item"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></div><div><h4>Production-focused designs</h4><p>Every decision is made with manufacturing in mind, not just first-pass function.</p></div></div>
-      <div class="why-item"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4L3 21l1.1-3.3A8.4 8.4 0 1 1 21 11.5z"/></svg></div><div><h4>Direct engineer access</h4><p>You talk to the person designing and debugging your board — no account managers in between.</p></div></div>
+      <div class="why-item"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4L3 21l1.1-3.3A8.4 8.4 0 1 1 21 11.5z"/></svg></div><div><h4>Single point of contact</h4><p>One project lead owns your engagement - scope, schedule, and technical coordination from kickoff to handoff.</p></div></div>
       <div class="why-item"><div class="ic"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></div><div><h4>Manufacturing-ready deliverables</h4><p>Clean Gerbers, BOMs, and assembly files your fab and assembler can build from without back-and-forth.</p></div></div>
       <div class="why-item"><div class="ic"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><div><h4>Tight iteration loops</h4><p>A small senior team means fast turnaround and fewer hops between problem and fix.</p></div></div>
     </div>
@@ -386,9 +393,9 @@ footer{ background:#0c1726; color:#aebccd; padding:52px 0 36px; }
       <h2>An electronics engineering company built for production</h2>
     </div>
     <div class="about-copy">
-      <p>Blutrace was founded on a simple premise: hardware projects go better when clients work directly with the <b>engineers doing the work</b>.</p>
-      <p>We take electronic products from concept to production - schematic capture, Altium PCB layout, prototype bring-up, validation, and manufacturing support - as one small, senior team. No handoffs between vendors, no account managers between you and your board.</p>
-      <p>Blutrace operates as a brand of <b>Bluventra Technologies Private Limited</b>, a company incorporated in India under the Companies Act, 2013.</p>
+      <p>BluTrace was founded on a simple premise: hardware projects go better when design, validation, and manufacturing readiness sit with <b>one accountable team</b>.</p>
+      <p>We take electronic products from concept to production - schematic capture, Altium PCB layout, prototype bring-up, validation, engineering consultancy, and manufacturing support - delivered by our engineering team and coordinated through a single point of contact, so nothing gets lost between vendors.</p>
+      <p>BluTrace operates as a brand of <b>Bluventra Technologies Private Limited</b>, a company incorporated in India under the Companies Act, 2013.</p>
     </div>
   </div>
 </section>
@@ -402,7 +409,7 @@ footer{ background:#0c1726; color:#aebccd; padding:52px 0 36px; }
     <h2>Have a board to design, or a prototype that won't behave?</h2>
     <p class="intro">Tell us what you're building and we'll come back with a scope and a quote.</p>
     <div class="cta-actions">
-      <a class="btn btn-light" href="mailto:hello@blutrace.io?subject=Request%20a%20Quote%20%E2%80%94%20Blutrace">Request a quote</a>
+      <a class="btn btn-light" href="mailto:hello@blutrace.io?subject=Request%20a%20Quote%20%E2%80%94%20BluTrace">Request a quote</a>
       <a class="cta-mail" href="mailto:hello@blutrace.io"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> hello@blutrace.io</a>
     </div>
   </div>
@@ -413,15 +420,15 @@ footer{ background:#0c1726; color:#aebccd; padding:52px 0 36px; }
   <div class="wrap">
     <div class="foot-top">
       <div>
-        <div class="foot-brand"><svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#15263D"/><g fill="none" stroke="#6CA6F0" stroke-width="2" stroke-linecap="round"><path d="M16 6v6M16 20v6M6 16h6M20 16h6"/></g><circle cx="16" cy="16" r="4.5" fill="none" stroke="#6CA6F0" stroke-width="2"/><circle cx="16" cy="16" r="1.9" fill="#C0843C"/></svg><span><b>blu</b>trace</span></div>
-        <p class="foot-about">An electronics engineering firm. PCB design, electronics development, prototype testing, and manufacturing support — from concept to production-ready hardware.</p>
+        <div class="foot-brand"><svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#15263D"/><g fill="none" stroke="#6CA6F0" stroke-width="2" stroke-linecap="round"><path d="M16 6v6M16 20v6M6 16h6M20 16h6"/></g><circle cx="16" cy="16" r="4.5" fill="none" stroke="#6CA6F0" stroke-width="2"/><circle cx="16" cy="16" r="1.9" fill="#C0843C"/></svg><span><b>Blu</b>Trace</span></div>
+        <p class="foot-about">An electronics engineering firm. PCB design, electronics development, prototype testing, consultancy, and manufacturing support — from concept to production-ready hardware.</p>
       </div>
-      <div class="foot-col"><h5>Services</h5><a href="#services">PCB Design</a><a href="#services">Electronics Development</a><a href="#services">Prototype Testing</a><a href="#services">Manufacturing Support</a></div>
-      <div class="foot-col"><h5>Company</h5><a href="#about">About us</a><a href="#industries">Industries</a><a href="#process">Process</a><a href="#engage">How we engage</a><a href="#why">Why Blutrace</a></div>
-      <div class="foot-col"><h5>Contact</h5><a href="mailto:hello@blutrace.io">hello@blutrace.io</a><a href="mailto:hello@blutrace.io?subject=Project%20inquiry%20%E2%80%94%20Blutrace">Start a project</a></div>
+      <div class="foot-col"><h5>Services</h5><a href="#services">PCB Design</a><a href="#services">Electronics Development</a><a href="#services">Prototype Testing</a><a href="#services">Manufacturing Support</a><a href="#services">Engineering Consultancy</a></div>
+      <div class="foot-col"><h5>Company</h5><a href="#about">About us</a><a href="#industries">Industries</a><a href="#process">Process</a><a href="#engage">How we engage</a><a href="#why">Why BluTrace</a></div>
+      <div class="foot-col"><h5>Contact</h5><a href="mailto:hello@blutrace.io">hello@blutrace.io</a><a href="mailto:hello@blutrace.io?subject=Project%20inquiry%20%E2%80%94%20BluTrace">Start a project</a></div>
     </div>
     <div class="foot-legal">
-      <p><b>Blutrace</b> is a brand of <b>Bluventra Technologies Private Limited</b> · CIN: U70200MH2026PTC473592 · GSTIN: 27AAOCB9430A1ZR</p>
+      <p><b>BluTrace</b> is a brand of <b>Bluventra Technologies Private Limited</b> · CIN: U70200MH2026PTC473592 · GSTIN: 27AAOCB9430A1ZR</p>
       <p>Registered office: Room No. 7, Floor 4, Mayur Building, Badamwadi CHS, Plot No. 377, Vithalbhai Patel Road, Girgaon, Mumbai - 400004, Maharashtra, India</p>
       <p>Phone: <a href="tel:+918586945443">+91-8586945443</a> · Email: <a href="mailto:hello@blutrace.io">hello@blutrace.io</a> · Queries &amp; grievances: Shubham Pansare</p>
     </div>
